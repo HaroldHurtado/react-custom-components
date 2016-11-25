@@ -9,7 +9,8 @@ module.exports = {
   output: {
     publicPath: '/dist/',
     path: path.resolve(__dirname, 'dist'),
-    filename: "library.min.js"
+    filename: "library.min.js",
+    libraryTarget: 'umd',
   },
   module: {
     loaders: [
