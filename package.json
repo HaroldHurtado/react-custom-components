@@ -9,6 +9,11 @@
     "type": "git",
     "url": "git+https://github.com/HaroldHurtado/react-custom-components.git"
   },
+  "scripts": {
+    "precompile": "webpack --config ./webpack.library.config.js",
+    "start": "webpack-dev-server --inline --hot --config ./webpack.config.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "babel-core": "^6.0.0",
     "babel-loader": "^6.2.0",
@@ -23,12 +28,5 @@
     "react-dom": "^0.14.6",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.1"
-  },
-  "scripts": {
-    "precompile": "webpack --config ./webpack.library.config.js",
-    "start": "webpack-dev-server --inline --hot --config ./webpack.config.js ",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  }
 }
