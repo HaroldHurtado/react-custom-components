@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
-import {Button} from '../../src/components/Button.jsx';
+import React, { Component } from 'react';
+import { Button } from '../../src/components/Button.jsx';
+import { Link } from 'react-router';
 
 export class DashboardButton extends Component {
   constructor(props) {
@@ -11,9 +12,16 @@ export class DashboardButton extends Component {
   render() {
     return(
           <div>
-            <Button 
-              onClick={this.onClickButtonComponent.bind(this)}
-            />
+            <div>
+              <Link to="labels">Label</Link>
+              <Link to="buttons">Button</Link>
+              <Link to="inputs">Input</Link>
+            </div>
+            <div>
+              <Button
+                onClick={this.onClickButtonComponent.bind(this)}
+                />
+            </div>
           </div>
     );
   }

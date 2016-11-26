@@ -1,17 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import ReactDOM  from 'react-dom';
-import {Dashboard} from './Dashboard.jsx'
+import { DashboardButton } from './moduleButton/DashboardButton.jsx';
+import { DashboardLabel } from './moduleLabel/DashboardLabel.jsx';
+import { DashboardInput } from './moduleInput/DashboardInput.jsx';
+import { Router, Route, IndexRouter, hashHistory } from 'react-router';
 
-class MainPage extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    return(<div>
-            <Dashboard />
-           </div>
-          );
-  }
-}
 const dashboard = document.getElementById("dashboard");
-ReactDOM.render(<MainPage/>, dashboard );
+ReactDOM.render(
+                <Router history={hashHistory}>
+                  <Route path='/' component={DashboardLabel}/>
+                  <Route path='labels' component={DashboardLabel} />
+                  <Route path='buttons' component={DashboardButton} />
+                  <Route path="inputs" component={DashboardInput} />
+                </Router>
+                , dashboard );

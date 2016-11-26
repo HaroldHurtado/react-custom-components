@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import {DashboardButton} from './moduleButton/DashboardButton.jsx';
 
 export class Dashboard extends Component {
   constructor(props) {
@@ -8,7 +7,7 @@ export class Dashboard extends Component {
   render() {
     return(
       <div>
-        <DashboardButton />
+        I am Dashboard
       </div>
     );
   }
