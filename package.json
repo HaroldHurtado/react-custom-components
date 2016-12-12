@@ -11,7 +11,7 @@
   },
   "scripts": {
     "transpilation": "webpack --mode=build --config ./webpack.library.config.js",
-    "start": "webpack-dev-server --inline --hot --config ./webpack.config.js ",
+    "start": "webpack-dev-server --inline --hot --config ./webpack.config.js --port 5000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

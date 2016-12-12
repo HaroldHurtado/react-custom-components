@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Label } from '../../src/components/Label.jsx';
+import { TextArea } from '../../src/components/TextArea.jsx';
 import { Link } from 'react-router';
 
-export class DashboardLabel extends Component {
-  constructor(props) {
-    super(props);
+export class DashboardTextArea extends Component {
+  constructor(props){
+    super(props)
   }
   render() {
     return(
@@ -16,7 +16,7 @@ export class DashboardLabel extends Component {
           <Link to="textareas">Text Area</Link>
         </div>
         <div>
-          <Label />
+          <TextArea />
         </div>
       </div>
     );

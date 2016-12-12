@@ -16,6 +16,7 @@ export class DashboardButton extends Component {
               <Link to="labels">Label</Link>
               <Link to="buttons">Button</Link>
               <Link to="inputs">Input</Link>
+              <Link to="textareas">Text Area</Link>
             </div>
             <div>
               <Button
