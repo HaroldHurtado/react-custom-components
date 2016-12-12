@@ -1,1 +1,39 @@
 @import 'button.less';
+
+.hbox{
+    width:100%;
+
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+.container {
+    display: box;
+    box-orient: horizontal;
+    box-pack: center;
+    box-align: center;
+}
+
+
+.nav-bar {
+  width: 20%;
+  a {
+      width: 100%;
+	    display:inline-block;
+	}
+}
+
+.content {
+  width: 80%
+}
