@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Button } from '../../src/components/Button.jsx';
+import { RadioButtonItem } from '../../src/components/RadioButtonItem.jsx';
 import { Link } from 'react-router';
 
-export class DashboardButton extends Component {
+export class DashboardRadioButton extends Component {
   constructor(props) {
     super(props);
   }
@@ -19,7 +19,7 @@ export class DashboardButton extends Component {
               <Link to="radiobuttons">Radio Button</Link>
             </div>
             <div className="content">
-              <Button />
+              <RadioButtonItem />
             </div>
           </div>
     );

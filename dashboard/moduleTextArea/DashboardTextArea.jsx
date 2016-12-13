@@ -16,6 +16,7 @@ export class DashboardTextArea extends Component {
           <Link to="inputs">Input</Link>
           <Link to="textareas">Text Area</Link>
           <Link to="checkboxs">Check Box</Link>
+          <Link to="radiobuttons">Radio Button</Link>
         </div>
         <div className="content">
           <TextArea />
