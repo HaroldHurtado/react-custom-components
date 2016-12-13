@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 export class Dashboard extends Component {
   constructor(props) {
     super(props);
-    console.log(props)
   }
   render() {
     return(
@@ -16,6 +15,7 @@ export class Dashboard extends Component {
           <Link to="textareas">Text Area</Link>
           <Link to="checkboxs">Check Box</Link>
           <Link to="radiobuttons">Radio Button</Link>
+          <Link to="selects">Select</Link>
         </div>
         <div className="content">
           I am content Dashboard

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Label } from '../../src/components/Label.jsx';
+import { Select } from '../../src/components/Select.jsx';
 import { Link } from 'react-router';
 
-export class DashboardLabel extends Component {
-  constructor(props) {
-    super(props);
+export class DashboardSelect extends Component {
+  constructor(props){
+    super(props)
+
   }
   render() {
     return(
@@ -19,7 +20,7 @@ export class DashboardLabel extends Component {
           <Link to="selects">Select</Link>
         </div>
         <div className="content">
-          <Label />
+          <Select />
         </div>
       </div>
     );
