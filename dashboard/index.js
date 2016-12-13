@@ -7,6 +7,7 @@ import { DashboardTextArea } from './moduleTextArea/DashboardTextArea.jsx';
 import { DashboardCheckBox } from './moduleCheckBox/DashboardCheckBox.jsx';
 import { DashboardRadioButton } from './moduleRadioButton/DashboardRadioButton.jsx';
 import { DashboardSelect } from './moduleSelect/DashboardSelect.jsx';
+import { DashboardSelectMultiple } from './moduleSelectMultiple/DashboardSelectMultiple.jsx';
 import { Dashboard } from './Dashboard.jsx';
 import { Router, Route, IndexRouter, hashHistory } from 'react-router';
 
@@ -22,5 +23,6 @@ ReactDOM.render(
                   <Route path="checkboxs" component={DashboardCheckBox} />
                   <Route path="radiobuttons" component={DashboardRadioButton} />
                   <Route path="selects" component={DashboardSelect} />
+                  <Route path="selectmultiple" component={DashboardSelectMultiple} />
                 </Router>
                 , dashboard );

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Select } from '../../src/components/Select.jsx';
+import { SelectMultiple } from '../../src/components/SelectMultiple.jsx';
 import { Link } from 'react-router';
 
-export class DashboardSelect extends Component {
+export class DashboardSelectMultiple extends Component {
   constructor(props){
     super(props)
 
@@ -21,7 +21,7 @@ export class DashboardSelect extends Component {
           <Link to="selectmultiple">Select Multiple</Link>
         </div>
         <div className="content">
-          <Select />
+          <SelectMultiple />
         </div>
       </div>
     );
