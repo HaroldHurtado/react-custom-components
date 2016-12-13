@@ -14,6 +14,7 @@ export class DashboardLabel extends Component {
           <Link to="buttons">Button</Link>
           <Link to="inputs">Input</Link>
           <Link to="textareas">Text Area</Link>
+          <Link to="checkboxs">Check Box</Link>
         </div>
         <div className="content">
           <Label />

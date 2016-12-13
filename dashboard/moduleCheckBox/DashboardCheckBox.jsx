@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Button } from '../../src/components/Button.jsx';
+import { CheckBoxItem } from '../../src/components/CheckBoxItem.jsx';
 import { Link } from 'react-router';
 
-export class DashboardButton extends Component {
+export class DashboardCheckBox extends Component {
   constructor(props) {
     super(props);
   }
@@ -18,7 +18,7 @@ export class DashboardButton extends Component {
               <Link to="checkboxs">Check Box</Link>
             </div>
             <div className="content">
-              <Button />
+              <CheckBoxItem />
             </div>
           </div>
     );
