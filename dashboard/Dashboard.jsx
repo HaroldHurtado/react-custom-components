@@ -9,6 +9,7 @@ export class Dashboard extends Component {
     return(
       <div>
         <div className="header">
+          <h3>React Customer Components</h3>
         </div>
         <div className="hbox">
           <div className="nav-bar">
@@ -22,7 +23,7 @@ export class Dashboard extends Component {
             <Link to="selectmultiple">Select Multiple</Link>
           </div>
           <div className="content">
-            I am content Dashboard
+            {this.props.children}
           </div>
         </div>
       </div>

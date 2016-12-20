@@ -9,20 +9,20 @@ import { DashboardRadioButton } from './moduleRadioButton/DashboardRadioButton.j
 import { DashboardSelect } from './moduleSelect/DashboardSelect.jsx';
 import { DashboardSelectMultiple } from './moduleSelectMultiple/DashboardSelectMultiple.jsx';
 import { Dashboard } from './Dashboard.jsx';
-import { Router, Route, IndexRouter, hashHistory } from 'react-router';
-
-const dashboard = document.getElementById("dashboard");
+import { Router, Route, IndexRoute , browserHistory} from 'react-router';
 
 ReactDOM.render(
-                <Router history={hashHistory}>
-                  <Route path='/' component={Dashboard}/>
-                  <Route path='labels' component={DashboardLabel} />
-                  <Route path='buttons' component={DashboardButton} />
-                  <Route path="inputs" component={DashboardInput} />
-                  <Route path="textareas" component={DashboardTextArea} />
-                  <Route path="checkboxs" component={DashboardCheckBox} />
-                  <Route path="radiobuttons" component={DashboardRadioButton} />
-                  <Route path="selects" component={DashboardSelect} />
-                  <Route path="selectmultiple" component={DashboardSelectMultiple} />
+                <Router history={browserHistory}>
+                  <Route path='/' component={Dashboard}>
+                    <IndexRoute component = {DashboardLabel} />
+                    <Route path='labels' component={DashboardLabel} />
+                    <Route path='buttons' component={DashboardButton} />
+                    <Route path="inputs" component={DashboardInput} />
+                    <Route path="textareas" component={DashboardTextArea} />
+                    <Route path="checkboxs" component={DashboardCheckBox} />
+                    <Route path="radiobuttons" component={DashboardRadioButton} />
+                    <Route path="selects" component={DashboardSelect} />
+                    <Route path="selectmultiple" component={DashboardSelectMultiple} />
+                  </Route>
                 </Router>
-                , dashboard );
+                , document.getElementById("dashboard") );
