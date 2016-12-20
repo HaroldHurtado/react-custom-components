@@ -9,6 +9,9 @@ export class DashboardCheckBox extends Component {
 
   render() {
     return(
+        <div>
+          <div className="header">
+          </div>
           <div className="hbox">
             <div className="nav-bar">
               <Link to="labels">Label</Link>
@@ -24,6 +27,7 @@ export class DashboardCheckBox extends Component {
               <CheckBoxItem />
             </div>
           </div>
+        </div>
     );
   }
 }
